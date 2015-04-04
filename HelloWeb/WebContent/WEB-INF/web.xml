@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HelloWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>hobby.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>p1.HelloTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/HelloTest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Hob</servlet-name>
+    <servlet-class>p1.Hob</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hob</servlet-name>
+    <url-pattern>/pageapp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Re</servlet-name>
+    <servlet-class>p1.DBR</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Re</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OK</servlet-name>
+    <servlet-class>p1.Success</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OK</servlet-name>
+    <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>user</servlet-name>
+    <servlet-class>p1.LoginProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>user</servlet-name>
+    <url-pattern>/loguser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>p1.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/logadmin</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>adminA</servlet-name>
+    <servlet-class>p1.adminAfter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminA</servlet-name>
+    <url-pattern>/adminAfter</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
